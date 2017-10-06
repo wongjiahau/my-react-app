@@ -1,7 +1,6 @@
 import * as React from 'react';
 // import './Hello.css';
 import RaisedButton from 'material-ui/RaisedButton';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 const style = {
     margin: 12
 };
@@ -20,17 +19,15 @@ function Hello({
     }
 
     return (
-        <MuiThemeProvider>
-            <div className="hello">
-                <div className="greeting">
-                    Hello {name + getExclamationMarks(enthusiasmLevel)}
-                </div>
-                <RaisedButton label="Default" style={style}/>
-                <RaisedButton label="Primary" primary={true} style={style}/>
-                <RaisedButton label="Secondary" secondary={true} style={style}/>
-                <RaisedButton label="Disabled" disabled={true} style={style}/>
+        <div className="hello">
+            <div className="greeting">
+                Hello {name + getExclamationMarks(enthusiasmLevel)}
             </div>
-        </MuiThemeProvider>
+            <RaisedButton label="Default" style={style}/>
+            <RaisedButton label="Primary" primary={true} style={style}/>
+            <RaisedButton label="Secondary" secondary={true} style={style}/>
+            <RaisedButton label="Disabled" disabled={true} style={style}/>
+        </div>
     );
 }
 
