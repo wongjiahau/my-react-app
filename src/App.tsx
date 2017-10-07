@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import Hello from './playground/Hello';
-import Dialog from './playground/SimpleDialog';
+import Login from './components/login/Login';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const logo = require('./logo.svg');
@@ -20,8 +19,7 @@ class App extends React.Component {
             <code>src/App.tsx</code>
             and save to reload.
           </p>
-          <Hello name="hey" enthusiasmLevel={8}/>
-          <Dialog/>
+          <Login/>
         </div>
       </MuiThemeProvider>
     );
